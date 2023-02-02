@@ -1,0 +1,12 @@
+.carousel-indicators [data-bs-target]{
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 50%;
+    background-color: wheat !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer{
+        display: none;
+    }
+  }
