@@ -14,8 +14,8 @@ function AllMovies() {
             <Row style={{textAlign: "center"}}>
 
                 {data.map((mov) => 
-                <Col onClick={() => window.location.href="/movies/" + mov.id} id={mov.id} key = {mov.id} xs={6} md={4} lg={3} style={{marginBottom: "2%"}}>
-                    <Card>
+                <Col id={mov.id} key = {mov.id} xs={6} md={4} lg={3} style={{marginBottom: "2%"}}>
+                    <Card onClick={() => window.location.href="/movies/" + mov.id}>
                     <Card.Img variant="top" src={mov.image}/>
                     <Card.Body>
                         <Card.Title>{mov.title}</Card.Title>
