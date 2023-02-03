@@ -5,6 +5,7 @@ import CardsSlider from './components/CardsSlider';
 import Premieres from './components/Premieres';
 import Footer from './components/Footer/Footer';
 import AllMovies from './components/AllMovies';
+import SingleMovie from './components/SingleMovie';
 import {
   BrowserRouter as Router,
   Routes,
@@ -26,12 +27,21 @@ function App() {
                 </>
               }
             />
+
+            <Route exact path="/movies/:movid" 
+              element = {
+                <>
+                <SingleMovie />
+                </>
+              }
+            />
             
             <Route exact path="/"  element={
               <>
             <SliderImages/><CardsSlider/><Premieres/>
               </>}
             /> 
+            
         </Routes>
         <Footer />
     </div>
