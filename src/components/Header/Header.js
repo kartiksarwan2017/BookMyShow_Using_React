@@ -45,7 +45,7 @@ function Header() {
         </Container>
       </Navbar>
       <Container fluid style={{background:"black",color: "white"}}>
-        <a>First Option</a>
+        <a>First Option</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a>Second Option</a>
       </Container>
     </div>
