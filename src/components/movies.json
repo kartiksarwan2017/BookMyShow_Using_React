@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "image": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/pathaan-et00323848-1674372556.jpg",
+    "title": "Pathaan",
+    "actor": "Shah Rukh Khan"
+  },
+  {
+    "id": 2,
+    "image": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/avatar-the-way-of-water-et00037264-1670850986.jpg",
+    "title": "Avatar: The Way of Water",
+    "actor": "Stephen Lang"
+  },
+  {
+    "id": 3,
+    "image": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/michael-et00342919-1674473933.jpg",
+    "title": "Michael",
+    "actor": "Sundeep Kishan"
+  },
+  {
+    "id": 4,
+    "image": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/bell-bottom-et00117102-14-08-2021-04-33-35.jpg",
+    "title": "Bell Bottom",
+    "actor": "Akshay Kumar"
+  },
+  {
+    "id": 5,
+    "image": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/shershaah-et00124017-16-07-2021-08-26-14.jpg",
+    "title": "Shershah",
+    "actor": "Siddharth"
+  }
+]
+
+

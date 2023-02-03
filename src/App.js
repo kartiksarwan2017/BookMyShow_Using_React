@@ -4,22 +4,38 @@ import SliderImages from './components/SliderImages';
 import CardsSlider from './components/CardsSlider';
 import Premieres from './components/Premieres';
 import Footer from './components/Footer/Footer';
+import AllMovies from './components/AllMovies';
 import {
   BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+  Routes,
+  Route
 } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <Header />  
-      <SliderImages />
-      <CardsSlider />
-      <Premieres />
-      <Footer />
+
+    <Router>
+      <div>
+        <Header />  
+        <Routes>
+            
+            <Route exact path="/movies" 
+              element={
+                <>
+                <AllMovies /> 
+                </>
+              }
+            />
+            
+            <Route exact path="/"  element={
+              <>
+            <SliderImages/><CardsSlider/><Premieres/>
+              </>}
+            /> 
+        </Routes>
+        <Footer />
     </div>
+    </Router>   
   );
 }
 
