@@ -9,7 +9,7 @@ import Button from 'react-bootstrap/Button';
 
 function Header() {
   return (
-    <div>
+    <div style={{background:"black",color: "white"}}>
       <Navbar bg="dark" variant="dark" expand="lg">
         <Container>
           <Navbar.Brand href="/">BookMyShow</Navbar.Brand>
@@ -44,7 +44,7 @@ function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Container fluid style={{background:"black",color: "white"}}>
+      <Container>
         <a>First Option</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a>Second Option</a>
       </Container>
