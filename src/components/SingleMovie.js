@@ -3,17 +3,27 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import data from "./movies.json";
+import { useParams } from "react-router";
 
-function AllMovies() {
+function SingleMovie() {
 
-    console.log(data);
+    const {movid} = useParams();
+    console.log(movid);
 
     return (
         <div>
             <Container fluid style={{padding:"5%", background: "pink"}}>
             <Row style={{textAlign: "center"}}>
 
-                {data.map((mov) => 
+                {data.map((mov) => {
+
+                    // console.log(mov);
+
+                if(mov.id == movid){
+
+                    // console.log(mov);
+
+                return (
                 <Col id={mov.id} key = {mov.id} xs={6} md={4} lg={3} style={{marginBottom: "2%"}}>
                     <Card>
                     <Card.Img variant="top" src={mov.image}/>
@@ -25,7 +35,9 @@ function AllMovies() {
                     </Card.Body>
                     </Card>
                 </Col>
-                )}
+                );
+                }
+            })}
                 </Row>
             </Container>
         </div>
@@ -33,5 +45,5 @@ function AllMovies() {
 }
 
 
-export default AllMovies;
+export default SingleMovie;
 
