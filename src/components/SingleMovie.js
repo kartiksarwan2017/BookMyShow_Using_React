@@ -26,7 +26,7 @@ function SingleMovie() {
                 return (
                 <Col id={mov.id} key = {mov.id} xs={6} md={4} lg={3} style={{marginBottom: "2%"}}>
                     <Card>
-                    <Card.Img variant="top" src={mov.image}/>
+                    <Card.Img variant="top" src={mov.imageurl}/>
                     <Card.Body>
                         <Card.Title>{mov.title}</Card.Title>
                         <Card.Text>

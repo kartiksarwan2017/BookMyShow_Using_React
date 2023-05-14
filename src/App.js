@@ -4,8 +4,11 @@ import SliderImages from './components/SliderImages';
 import CardsSlider from './components/CardsSlider';
 import Premieres from './components/Premieres';
 import Footer from './components/Footer/Footer';
-import AllMovies from './components/AllMovies';
-import SingleMovie from './components/SingleMovie';
+// import AllMovies from './components/AllMovies';
+import AllMoviesFetch from './components/AllMoviesFetch';
+// import SingleMovie from './components/SingleMovie';
+import SingleMovieFetch from './components/SingleMovieFetch';
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -23,7 +26,7 @@ function App() {
             <Route exact path="/movies" 
               element={
                 <>
-                <AllMovies /> 
+                <AllMoviesFetch />
                 </>
               }
             />
@@ -31,7 +34,7 @@ function App() {
             <Route exact path="/movies/:movid" 
               element = {
                 <>
-                <SingleMovie />
+                <SingleMovieFetch />
                 </>
               }
             />
