@@ -5,15 +5,21 @@ import { useState } from "react";
 
 function Registration() {
 
+  const [username, setUsername] = useState("");
   const [emailaddress, setEmailAddress] = useState("");
   const [userpassword, setUserPassword] = useState("");
-
 
   return (
     <>
       <div>
-        <Container style={{padding: "9%"}}>
+        <Container style={{padding: "7%"}}>
           <Form>
+
+          <Form.Group className="mb-3">
+              <Form.Label>User Name</Form.Label>
+              <Form.Control type="text" placeholder="Enter Username" value={username} onChange={(e) => setUsername(e.target.value)} />
+          </Form.Group>
+
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control type="email" placeholder="Enter email" value={emailaddress} onChange={(e) => setEmailAddress(e.target.value)} />
