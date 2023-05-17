@@ -20,10 +20,15 @@ function Registration() {
       "password": userpassword
     }
     
-    console.log(userDetails);
+    // console.log(userDetails);
 
     const response = await axios.post('http://localhost:5000/user-register', userDetails);
-    console.log(response);
+
+    // console.log(response);
+
+    setUsername("");
+    setEmailAddress("");
+    setUserPassword("");
 
   };
 
