@@ -2,6 +2,7 @@ import  Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useState } from "react";
+import axios from "axios";
 
 function Registration() {
 
@@ -10,10 +11,19 @@ function Registration() {
   const [userpassword, setUserPassword] = useState("");
 
 
-  const userPost = () => {
+  const userPost = async () => {
     console.log(username, emailaddress, userpassword);
 
+    const userDetails = {
+      "username": username,
+      "email": emailaddress,
+      "password": userpassword
+    }
     
+    console.log(userDetails);
+
+    const response = await axios.post('http://localhost:5000/user-register', userDetails);
+    console.log(response);
 
   };
 
