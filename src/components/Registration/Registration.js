@@ -11,8 +11,14 @@ function Registration() {
   const [userpassword, setUserPassword] = useState("");
 
 
+  function clearInput() {
+    setUsername("");
+    setEmailAddress("");
+    setUserPassword("");
+  }
+
   const userPost = async () => {
-    console.log(username, emailaddress, userpassword);
+    // console.log(username, emailaddress, userpassword);
 
     const userDetails = {
       "username": username,
@@ -25,11 +31,8 @@ function Registration() {
     const response = await axios.post('http://localhost:5000/user-register', userDetails);
 
     // console.log(response);
-
-    setUsername("");
-    setEmailAddress("");
-    setUserPassword("");
-
+    clearInput();
+    
   };
 
   return (
