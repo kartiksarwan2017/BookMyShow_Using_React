@@ -12,17 +12,17 @@ function SingleMovieFetch() {
     const {movid} = useParams();
     const [singleData, setSingleData] = useState([]);
   
-    useEffect(() => {
+    useEffect(() => { 
         
         const getSingleMovies = async () => {
             try {
                 const response = await axios.get(`http://localhost:5000/movie/${movid}`);
 
-                // console.log(getSpecificMovies);
+                console.log(response);
 
                 setSingleData([response.data]);
-    
-                // console.log([getSpecificMovies]);
+
+                console.log([response.data]);
     
             } catch (error) {
                 console.error(error);
@@ -32,9 +32,6 @@ function SingleMovieFetch() {
         getSingleMovies();
 
     }, [movid]);
-
-    console.log(singleData);
-
 
     return (
         <div>
