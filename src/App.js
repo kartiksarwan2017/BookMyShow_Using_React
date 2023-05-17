@@ -8,7 +8,7 @@ import Footer from './components/Footer/Footer';
 import AllMoviesFetch from './components/AllMoviesFetch';
 // import SingleMovie from './components/SingleMovie';
 import SingleMovieFetch from './components/SingleMovieFetch';
-import Registration from './components/Registration/Regsitration';
+import Registration from './components/Registration/Registration';
 
 import {
   BrowserRouter as Router,
