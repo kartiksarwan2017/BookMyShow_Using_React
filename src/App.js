@@ -8,6 +8,7 @@ import Footer from './components/Footer/Footer';
 import AllMoviesFetch from './components/AllMoviesFetch';
 // import SingleMovie from './components/SingleMovie';
 import SingleMovieFetch from './components/SingleMovieFetch';
+import Registration from './components/Registration/Regsitration';
 
 import {
   BrowserRouter as Router,
@@ -44,6 +45,8 @@ function App() {
             <SliderImages/><CardsSlider/><Premieres/>
               </>}
             /> 
+
+            <Route exact path="/register" element={<Registration />}/>
             
         </Routes>
         <Footer />

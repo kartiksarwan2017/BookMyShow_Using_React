@@ -23,12 +23,9 @@ function Header() {
               <Nav.Link href="/">Home</Nav.Link>
               <NavDropdown title="Link" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="/movies">All Movies</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
+                <NavDropdown.Item href="/register">
+                  User Registration
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
@@ -45,8 +42,8 @@ function Header() {
         </Container>
       </Navbar>
       <Container>
-        <a>First Option</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a>Second Option</a>
+        <a href="/">First Option</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="/">Second Option</a>
       </Container>
     </div>
   );
