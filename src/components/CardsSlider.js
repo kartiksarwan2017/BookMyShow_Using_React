@@ -8,39 +8,21 @@ function CardsSlider() {
       <Carousel indicators={false} variant='dark'>
         <Carousel.Item>
         <CardGroup style={{display: "flex", gap: "40px", justifyContent:"space-around"}}>
-          <Card className="bg-dark text-white" style={{height: "300px", width: "300px"}}>
-              <Card.Img src="./logo192.png" alt="Card image" style={{height: "300px", width: "300px"}}/>
+          <Card className="text-white" style={{height: "300px", width: "300px", borderRadius: "20px"}}>
+              <Card.Img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MzArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/workshop-and-more-web-collection-202211140440.png" alt="Card image" style={{height: "300px", width: "100%", borderRadius: "20px"}}/>
               <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in
-                to additional content. This content is a little bit longer.
-              </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
               </Card.ImgOverlay>
            </Card>
 
-          <Card className="bg-dark text-white" style= {{height: "300px", width: "300px"}}>
-              <Card.Img src="./logo192.png" alt="Card image" style={{height: "300px", width: "300px"}}/>
+          <Card className="text-white" style= {{height: "300px", width: "300px", borderRadius: "20px"}}>
+              <Card.Img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/kids-zone-collection-202211140440.png" alt="Card image" style={{height: "300px", width: "100%", borderRadius: "20px"}}/>
               <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in
-                to additional content. This content is a little bit longer.
-              </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
               </Card.ImgOverlay>
           </Card>
 
-          <Card className="bg-dark text-white" style= {{height: "300px", width: "300px"}}>
-              <Card.Img src="./logo192.png" alt="Card image" style={{height: "300px", width: "300px"}}/>
+          <Card className="text-white" style= {{height: "300px", width: "300px", borderRadius: "20px"}}>
+              <Card.Img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NTUrIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/comedy-shows-collection-202211140440.png" alt="Card image" style={{height: "300px", width: "100%", borderRadius: "20px"}}/>
               <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in
-                to additional content. This content is a little bit longer.
-              </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
               </Card.ImgOverlay>
           </Card>         
         </CardGroup>  
@@ -49,39 +31,21 @@ function CardsSlider() {
         <Carousel.Item>
 
         <CardGroup style={{display: "flex", gap: "40px", justifyContent:"space-around"}}>
-          <Card className="bg-dark text-white" style= {{height: "300px", width: "300px"}}>
-              <Card.Img src="./logo192.png" alt="Card image" style={{height: "300px", width: "300px"}}/>
+          <Card className="text-white" style= {{height: "300px", width: "300px", borderRadius: "20px"}}>
+              <Card.Img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTUrIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/music-shows-collection-202211140440.png" alt="Card image" style={{height: "300px", width: "100%", borderRadius: "20px"}}/>
               <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in
-                to additional content. This content is a little bit longer.
-              </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
               </Card.ImgOverlay>
           </Card>
 
-          <Card className="bg-dark text-white" style= {{height: "300px", width: "300px"}}>
-              <Card.Img src="./logo192.png" alt="Card image" style={{height: "300px", width: "300px"}}/>
+          <Card className="text-white" style= {{height: "300px", width: "300px", borderRadius: "20px"}}>
+              <Card.Img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:w-300:q-80/ipl-collection-202302270454.png" alt="Card image" style={{height: "300px", width: "100%", borderRadius: "20px"}}/>
               <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in
-                to additional content. This content is a little bit longer.
-              </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
               </Card.ImgOverlay>
           </Card>
 
-          <Card className="bg-dark text-white" style= {{height: "300px", width: "300px"}}>
-              <Card.Img src="./logo192.png" alt="Card image" style={{height: "300px", width: "300px"}}/>
+          <Card className="text-white" style= {{height: "300px", width: "300px", borderRadius: "20px"}}>
+              <Card.Img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NCBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/arts-crafts-collection-202211140440.png" alt="Card image" style={{height: "300px", width: "100%", borderRadius: "20px"}}/>
               <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in
-                to additional content. This content is a little bit longer.
-              </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
               </Card.ImgOverlay>
           </Card>         
         </CardGroup> 

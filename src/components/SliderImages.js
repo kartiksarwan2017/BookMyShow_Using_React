@@ -6,40 +6,24 @@ function SliderImages() {
       <Carousel style={{height: "40%", width: "100%"}} fade variant='dark'>
         <Carousel.Item>
           <img
-            className="d-block w-40"
-            src="./logo192.png"
+            className="d-block w-100"
+            src="https://assets-in.bmscdn.com/promotions/cms/creatives/1682617779318_webbannernpa.jpg"
             alt="First slide"
           />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-40"
-            src="./logo192.png"
+            className="d-block w-100"
+            src="https://assets-in.bmscdn.com/promotions/cms/creatives/1683610055704_urbanemusicconcertabhishekkulkarnidesktop.jpg"
             alt="Second slide"
           />
-
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-40"
-            src="./logo192.png"
+            className="d-block w-100"
+            src="https://assets-in.bmscdn.com/promotions/cms/creatives/1684241755888_shorfestdesktop.jpg"
             alt="Third slide"
           />
-
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
     </div>
