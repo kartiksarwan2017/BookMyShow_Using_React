@@ -7,8 +7,6 @@ import Card from "react-bootstrap/Card";
 import axios from "axios";
 import React from "react";
 
-
-
 function SingleMovieFetch() {
 
     const {movid} = useParams();
@@ -18,13 +16,11 @@ function SingleMovieFetch() {
         
         const getSingleMovies = async () => {
             try {
-                const { data: {
-                    getSpecificMovies
-                } } = await axios.get(`http://localhost:5000/movie/${movid}`);
+                const response = await axios.get(`http://localhost:5000/movie/${movid}`);
 
                 // console.log(getSpecificMovies);
 
-                setSingleData([getSpecificMovies]);
+                setSingleData([response.data]);
     
                 // console.log([getSpecificMovies]);
     
