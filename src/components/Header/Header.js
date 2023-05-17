@@ -5,6 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import {Link} from "react-router-dom";
 
 
 function Header() {
@@ -41,9 +42,23 @@ function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Container>
-        <a href="/">First Option</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="/">Second Option</a>
+      <Container fluid className="nav-link-container">
+        <div style={{display:"inline-block"}}>
+        <Link to="/" className="navLinks">Movies</Link>
+        <Link to="/" className="navLinks">Streams</Link>
+        <Link to="/" className="navLinks">Events</Link>
+        <Link to="/" className="navLinks">Play</Link>
+        <Link to="/" className="navLinks">Sports</Link>
+        <Link to="/" className="navLinks">Activities</Link>
+        <Link to="/" className="navLinks">Buzz</Link>
+        </div>
+
+        <div style={{display:"inline-block"}}>
+        <Link to="/" style={{color: "white", fontSize: 14}} className="navLinks">ListYourShow</Link>
+        <Link to="/" style={{color: "white", fontSize: 14}} className="navLinks">Corporates</Link>
+        <Link to="/" style={{color: "white", fontSize: 14}} className="navLinks">Offers</Link>
+        <Link to="/" style={{color: "white", fontSize: 14}} className="navLinks">Gifts</Link>
+        </div>
       </Container>
     </div>
   );
