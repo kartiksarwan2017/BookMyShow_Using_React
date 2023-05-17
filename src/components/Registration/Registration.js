@@ -9,11 +9,19 @@ function Registration() {
   const [emailaddress, setEmailAddress] = useState("");
   const [userpassword, setUserPassword] = useState("");
 
+
+  const userPost = () => {
+    console.log(username, emailaddress, userpassword);
+
+    
+
+  };
+
   return (
     <>
       <div>
         <Container style={{padding: "7%"}}>
-          <Form>
+          <Form onSubmit={(e) => e.preventDefault()}>
 
           <Form.Group className="mb-3">
               <Form.Label>User Name</Form.Label>
@@ -35,7 +43,7 @@ function Registration() {
             {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
               <Form.Check type="checkbox" label="Check me out" />
             </Form.Group> */}
-            <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit" onClick={userPost}>
               Submit
             </Button>
           </Form>
