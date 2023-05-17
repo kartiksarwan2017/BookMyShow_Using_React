@@ -30,6 +30,9 @@ function Registration() {
 
     await axios.post('http://localhost:5000/user-register', userDetails);
 
+    // const response = await axios.post('http://localhost:5000/user-register', userDetails);
+    // console.log(response);
+
     clearInput();
     
   };
