@@ -7,7 +7,6 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import {Link} from "react-router-dom";
 
-
 function Header() {
   return (
     <div style={{background:"black",color: "white"}}>
@@ -44,7 +43,7 @@ function Header() {
       </Navbar>
       <Container fluid className="nav-link-container">
         <div style={{display:"inline-block"}}>
-        <Link to="/" className="navLinks">Movies</Link>
+        <Link to="/explore/movies" className="navLinks">Movies</Link>
         <Link to="/" className="navLinks">Streams</Link>
         <Link to="/" className="navLinks">Events</Link>
         <Link to="/" className="navLinks">Play</Link>

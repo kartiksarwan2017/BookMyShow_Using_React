@@ -9,6 +9,7 @@ import AllMoviesFetch from './components/AllMoviesFetch';
 // import SingleMovie from './components/SingleMovie';
 import SingleMovieFetch from './components/SingleMovieFetch';
 import Registration from './components/Registration/Registration';
+import ExploreMovies from "./components/ExploreMovies/ExploreMovies";
 
 import {
   BrowserRouter as Router,
@@ -19,11 +20,13 @@ import {
 function App() {
   return (
 
+
     <Router>
       <div>
         <Header />  
+       
         <Routes>
-            
+    
             <Route exact path="/movies" 
               element={
                 <>
@@ -47,6 +50,8 @@ function App() {
             /> 
 
             <Route exact path="/register" element={<Registration />}/>
+
+            <Route exact path= "/explore/movies" element={<ExploreMovies />} />
             
         </Routes>
         <Footer />
