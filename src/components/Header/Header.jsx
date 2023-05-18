@@ -44,7 +44,7 @@ function Header() {
       <Container fluid className="nav-link-container">
         <div style={{display:"inline-block"}}>
         <Link to="/explore/movies" className="navLinks">Movies</Link>
-        <Link to="/" className="navLinks">Streams</Link>
+        <Link to="/explore/stream" className="navLinks">Streams</Link>
         <Link to="/" className="navLinks">Events</Link>
         <Link to="/" className="navLinks">Play</Link>
         <Link to="/" className="navLinks">Sports</Link>
