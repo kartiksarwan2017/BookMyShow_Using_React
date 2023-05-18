@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useState } from "react";
 import axios from "axios";
+import Swal from 'sweetalert2';
 
 function Registration() {
 
@@ -28,13 +29,25 @@ function Registration() {
     
     // console.log(userDetails);
 
-    await axios.post('http://localhost:5000/user-register', userDetails);
+    await axios.post('http://localhost:5000/user-register', userDetails).then((data) => {
+
+        Swal.fire({
+          title: `<strong>${data.data.message}</strong>`,
+          icon: 'success',
+          showCloseButton: true
+      });
+      clearInput();
+
+    }).catch((err) => 
+      Swal.fire({
+        title: `<strong>${err.message}</strong>`,
+        icon: 'error',
+        showCloseButton: true
+    }));
 
     // const response = await axios.post('http://localhost:5000/user-register', userDetails);
     // console.log(response);
-
-    clearInput();
-    
+ 
   };
 
   return (
