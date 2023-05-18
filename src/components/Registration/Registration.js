@@ -29,16 +29,18 @@ function Registration() {
     
     // console.log(userDetails);
 
-    await axios.post('http://localhost:5000/user-register', userDetails).then((data) => {
+    await axios.post('http://localhost:5000/user-register', userDetails)
+      .then((data) => {
 
         Swal.fire({
           title: `<strong>${data.data.message}</strong>`,
           icon: 'success',
           showCloseButton: true
-      });
-      clearInput();
+        });
+        clearInput();
 
     }).catch((err) => 
+
       Swal.fire({
         title: `<strong>${err.message}</strong>`,
         icon: 'error',
