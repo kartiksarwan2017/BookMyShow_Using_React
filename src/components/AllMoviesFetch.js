@@ -16,7 +16,7 @@ function AllMoviesFetch() {
         async function getMovies(){
 
             try {
-                const response = await axios.get('http://localhost:5000/movies');
+                const response = await axios.get('https://book-my-show-node-js-express-seven.vercel.app/movies');
                 
                 console.log(response);
                 setData(response.data);

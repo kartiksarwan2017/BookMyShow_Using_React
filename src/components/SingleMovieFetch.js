@@ -16,7 +16,7 @@ function SingleMovieFetch() {
         
         const getSingleMovies = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/movie/${movid}`);
+                const response = await axios.get(`https://book-my-show-node-js-express-seven.vercel.app/movie/${movid}`);
 
                 console.log(response);
 

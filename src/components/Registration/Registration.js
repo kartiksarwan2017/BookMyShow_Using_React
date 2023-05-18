@@ -29,7 +29,7 @@ function Registration() {
     
     // console.log(userDetails);
 
-    await axios.post('http://localhost:5000/user-register', userDetails)
+    await axios.post('https://book-my-show-node-js-express-seven.vercel.app/user-register', userDetails)
       .then((data) => {
 
         Swal.fire({
@@ -47,7 +47,7 @@ function Registration() {
         showCloseButton: true
     }));
 
-    // const response = await axios.post('http://localhost:5000/user-register', userDetails);
+    // const response = await axios.post('https://book-my-show-node-js-express-seven.vercel.app/user-register', userDetails);
     // console.log(response);
  
   };
