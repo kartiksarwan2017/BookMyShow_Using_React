@@ -7,7 +7,7 @@ import SliderImages from "../SliderImages";
 import axios from 'axios';
 
 const API_KEY = "8f708fd09a4addc7173d07c46df205e4";
-const API_URL = `http://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}`;
+const API_URL = `https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}`;
 const imgUrl = "https://image.tmdb.org/t/p/original";
 
 const ExploreMovies = () => {
