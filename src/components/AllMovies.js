@@ -6,8 +6,6 @@ import data from "./movies.json";
 
 function AllMovies() {
 
-    console.log(data);
-
     return (
         <div>
             <Container fluid style={{padding:"5%", background: "pink"}}>

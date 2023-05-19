@@ -35,7 +35,7 @@ const ExploreMovies = () => {
 
            <h1 style={{color: "black", marginBottom: 20}}>Upcoming Movies</h1>
 
-            <Row style={{textAlign: "center"}}>
+            <Row style={{textAlign: "center", backgroundColor: "pink"}}>
                 {movies.map((mov, index) => 
                 <Col id={mov.id} key = {mov.id} xs={6} md={4} lg={3} style={{marginBottom: "2%"}}>
                     <Card style={{height: "550px", width: "300px" , borderRadius: "10px",cursor: "pointer"}} >
