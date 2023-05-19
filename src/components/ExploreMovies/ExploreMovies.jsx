@@ -21,8 +21,6 @@ const ExploreMovies = () => {
 
        const {data: {results}} = await axios.get(API_URL);
        setMovies(results);
-       console.log(results);
-
     }
 
     getMoviesList();

@@ -18,8 +18,6 @@ const ExploreStream = () => {
 
        const getMovies = async () => {
             const {data: {results}} = await axios.get(API_URL);
-            console.log(results);
-
             setMovies(results);
 
         }
@@ -36,7 +34,7 @@ const ExploreStream = () => {
     return (
         <Carousel.Item 
            key={index} 
-           style={{background: `url(${imgPath}/${mov.poster_path})`, backgroundSize: "cover", zIndex: "-3", height: "480px"}}>
+           style={{background: `url(${imgPath}/${mov.poster_path})`, backgroundSize: "cover", zIndex: "-3", height: "480px",  backgroundFilter: "blur(1px)"}}>
               <Card 
                  style={{width: "250px" , borderRadius: "10px", cursor: "pointer", position: "relative", top: 54, left: 30}} >
                <Card.Img variant="top" src={`${imgPath}/${mov.poster_path}`} 

@@ -6,7 +6,7 @@ function Premieres() {
   return (
     <div style={{background: "rgb(43, 49, 72)", padding: "5%" }}>
       <h2 style={{ color: "white", display: "inline-block" }}>
-        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/premiere-banner-web-collection-202208191200.png" style={{width:"100%"}} />
+        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/premiere-banner-web-collection-202208191200.png" alt="premiere-banner" style={{width:"100%"}} />
       </h2>
       <Carousel indicators={false} variant= "dark">
         <Carousel.Item>
