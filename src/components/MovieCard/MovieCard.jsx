@@ -11,7 +11,7 @@ const styles = {
 const MovieCard = ({img}) => {
   return (
     <>
-      <img style={styles} src={img} alt="cover" />
+      <img id="card" style={styles} src={img} alt="cover" />
    </>
   )
 }

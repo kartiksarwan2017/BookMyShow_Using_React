@@ -9,7 +9,7 @@ function AllMovies() {
     return (
         <div>
             <Container fluid style={{padding:"5%", background: "pink"}}>
-            <Row style={{textAlign: "center"}}>
+            <Row style={{textAlign: "center", backgroundColor:"pink"}}>
 
                 {data.map((mov) => 
                 <Col id={mov.id} key = {mov.id} xs={6} md={4} lg={3} style={{marginBottom: "2%"}}>

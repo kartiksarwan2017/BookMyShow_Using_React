@@ -60,9 +60,7 @@ const ExploreStream = () => {
   }
 
   nowPlayingMovies();
-    
-
-
+  
   }, []);
 
   return (
